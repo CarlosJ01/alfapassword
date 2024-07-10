@@ -1,0 +1,86 @@
+#home-container {
+  background: black;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 80% 10%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+
+  justify-items: center;
+  align-items: center;
+
+  background-color: #434343ff;
+}
+
+header .logo {
+  text-align: center;
+  text-shadow: -3px -3px 3px #990000, 3px -3px 3px #990000, -3px 3px 3px #990000,
+    3px 3px 3px #990000;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+
+  background-color: #434343ff;
+  padding: 1em;
+}
+
+footer .titulo {
+  font-size: 1.1rem;
+}
+
+footer .author {
+  color: #cc0000;
+}
+
+main {
+  padding: 1rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.display-none {
+  display: none;
+  z-index: -100;
+}
+
+@media (min-width: 700px) {
+  header .menu,
+  header .logout {
+    font-size: 2rem;
+  }
+
+  header .logo {
+    font-size: 3rem;
+  }
+
+  footer .titulo {
+    font-size: 2rem;
+  }
+
+  footer .author {
+    font-size: 1.5rem;
+  }
+}

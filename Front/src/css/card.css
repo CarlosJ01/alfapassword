@@ -1,0 +1,171 @@
+.card-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  top: -10vh;
+
+  background-color: #666666ff;
+  border: 3px #660000 solid;
+  border-radius: 1rem;
+
+  padding: 1.5rem 0.7rem;
+  min-height: 50vh;
+
+  display: grid;
+  grid-template-rows: 5% 85% 10%;
+  grid-gap: 0.3rem;
+}
+
+.card .titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cc0000;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.form-container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.form-element {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+
+.form-element label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.form-element input {
+  background-color: black;
+  color: white;
+  border: #660000 solid 1px;
+  border-radius: 0.5rem;
+  outline: none;
+
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.card .acciones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.card .acciones button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+
+  color: white;
+  background-color: #660000;
+  border: black solid 1px;
+  border-radius: 0.5rem;
+}
+
+.card .acciones .button-3 {
+  grid-column: 3 / span 1;
+}
+
+.card .acciones .button-4 {
+  grid-column: 4 / span 1;
+}
+
+.form-element-radio {
+  display: grid;
+}
+
+.form-element-radio label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.elements-radio {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 0.7rem;
+}
+
+.element-radio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.element-radio .logo {
+  font-size: 1.2rem;
+}
+
+.display-none {
+  display: none;
+  z-index: -100;
+}
+
+@media (min-width: 700px) {
+  .card {
+    min-width: 40rem;
+    min-height: 60vh;
+  }
+
+  .card .titulo {
+    font-size: 3rem;
+  }
+
+  .form-element {
+    grid-template-columns: 20% 80%;
+  }
+
+  .form-element label,
+  .form-element input {
+    font-size: 1.5rem;
+  }
+
+  .card .acciones button {
+    margin: 1rem;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+  }
+
+  .form-element-radio label {
+    font-size: 1.5rem;
+  }
+
+  .elements-radio {
+    margin: 1.5rem;
+  }
+  .element-radio {
+    font-size: 1rem;
+  }
+
+  .element-radio .logo {
+    font-size: 2rem;
+  }
+}

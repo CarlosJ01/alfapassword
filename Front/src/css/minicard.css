@@ -1,0 +1,27 @@
+.card-mini {
+  color: white;
+  background-color: #666666ff;
+  border: #85200c 1px solid;
+  border-radius: 0.5rem;
+
+  padding: 1rem;
+  margin: 0.5rem auto;
+
+  min-width: 75%;
+  min-height: 3rem;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.card-mini h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .card-mini h4 {
+    font-size: 2rem;
+  }
+}

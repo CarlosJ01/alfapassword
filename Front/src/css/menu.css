@@ -1,0 +1,69 @@
+.menu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  z-index: 2;
+
+  background-color: #9999996d;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 80% 10%;
+}
+
+nav {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10%;
+}
+
+nav h2 {
+  color: #cc0000;
+  font-size: 2rem;
+  align-self: center;
+  justify-self: center;
+}
+
+ul {
+  padding: 1rem 2rem;
+}
+
+li {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  border: 1px #660000 solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #666666ff;
+
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.display-none {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .menu-nav {
+    width: 30vw;
+  }
+
+  nav h2 {
+    font-size: 3rem;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+}
